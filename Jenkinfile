@@ -1,15 +1,10 @@
 pipeline { 
-    agent {
-        label {
-	     label "vm-agent"
-            customWorkspace "/home/ubuntu/pipleine/"
-        }
-    }
+    agent any
     stages { 
         stage('Build') { 
             steps { 
                sh 'mvn clean package' 
             }
         }
-  }
+    }
 }
