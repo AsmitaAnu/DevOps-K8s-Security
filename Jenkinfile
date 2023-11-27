@@ -2,7 +2,7 @@ pipeline {
     agent {
         label {
 	     label "vm-agent"
-            customWorkspace "/home/ubuntu/Jenkins/pipleines/maven-job"
+            customWorkspace "/home/ubuntu/pipleine"
         }
     }
     stages { 
